@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: petshop_saas_mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root_secure_password
+      MYSQL_DATABASE: petshop_saas_local
+      MYSQL_USER: petshop_user
+      MYSQL_PASSWORD: petshop_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - petshop_saas_mysql_data:/var/lib/mysql
+
+volumes:
+  petshop_saas_mysql_data:

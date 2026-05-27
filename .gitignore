@@ -1,0 +1,13 @@
+node_modules
+dist
+coverage
+*.log
+.env
+env/.env.local
+env/.env.staging
+env/.env.production
+src/env/
+!env/.env.example
+!env/.env.local.example
+!env/.env.staging.example
+!env/.env.production.example
