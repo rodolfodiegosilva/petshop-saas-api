@@ -49,6 +49,6 @@ export class AppModule implements NestModule {
         { path: 'tenants/config', method: RequestMethod.GET },
         { path: 'payments/webhook', method: RequestMethod.POST },
       )
-      .forRoutes('*');
+      .forRoutes({ path: '{*path}', method: RequestMethod.ALL });
   }
 }
