@@ -23,10 +23,10 @@ export class Product {
   @Column({ type: 'decimal', precision: 2, scale: 1, default: 5.0 })
   rating: number;
 
-  @Column({ name: 'image_bg', length: 150, nullable: true })
+  @Column({ name: 'image_bg', type: 'varchar', length: 150, nullable: true })
   imageBg: string | null;
 
-  @Column({ name: 'image_emoji', length: 10, nullable: true })
+  @Column({ name: 'image_emoji', type: 'varchar', length: 10, nullable: true })
   imageEmoji: string | null;
 
   @Column({ type: 'text' })

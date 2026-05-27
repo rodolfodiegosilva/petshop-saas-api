@@ -38,10 +38,10 @@ export class User {
   @Column({ length: 20 })
   phone: string;
 
-  @Column({ length: 100, nullable: true })
+  @Column({ type: 'varchar', length: 100, nullable: true })
   neighborhood: string | null;
 
-  @Column({ length: 50, nullable: true })
+  @Column({ type: 'varchar', length: 50, nullable: true })
   city: string | null;
 
   @Column({ type: 'enum', enum: Role, default: Role.CLIENT })

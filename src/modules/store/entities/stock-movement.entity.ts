@@ -17,7 +17,7 @@ export class StockMovement {
   @JoinColumn({ name: 'product_id' })
   product: Product;
 
-  @Column({ name: 'user_id', length: 36, nullable: true })
+  @Column({ name: 'user_id', type: 'varchar', length: 36, nullable: true })
   userId: string | null;
 
   @ManyToOne(() => User, { onDelete: 'SET NULL' })
@@ -30,7 +30,7 @@ export class StockMovement {
   @Column({ type: 'enum', enum: ['sale', 'cancellation_return', 'manual_adjustment', 'replenishment', 'loss'] })
   type: StockMovementType;
 
-  @Column({ length: 250, nullable: true })
+  @Column({ type: 'varchar', length: 250, nullable: true })
   reason: string | null;
 
   @Column({ name: 'tenant_id', length: 36 })

@@ -30,10 +30,10 @@ export class Appointment {
   @Column({ length: 150 })
   location: string;
 
-  @Column({ name: 'pickup_address', length: 250, nullable: true })
+  @Column({ name: 'pickup_address', type: 'varchar', length: 250, nullable: true })
   pickupAddress: string | null;
 
-  @Column({ name: 'destination_address', length: 250, nullable: true })
+  @Column({ name: 'destination_address', type: 'varchar', length: 250, nullable: true })
   destinationAddress: string | null;
 
   @Column({ name: 'transport_mode', type: 'enum', enum: ['Somente ida', 'Ida e volta'], nullable: true })
@@ -62,7 +62,7 @@ export class Appointment {
   @JoinColumn({ name: 'tutor_id' })
   tutor: User;
 
-  @Column({ name: 'veterinarian_id', nullable: true })
+  @Column({ name: 'veterinarian_id', type: 'int', nullable: true })
   veterinarianId: number | null;
 
   @ManyToOne(() => Veterinarian, (vet) => vet.appointments, { onDelete: 'SET NULL' })
