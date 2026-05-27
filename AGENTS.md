@@ -8,6 +8,13 @@ Before changing database structure, modules, entities, repositories, services, o
 
 - [AI_DATABASE_CHANGE_REQUIREMENTS.md](./AI_DATABASE_CHANGE_REQUIREMENTS.md)
 
+These rules are mirrored for other tools in:
+
+- [CLAUDE.md](./CLAUDE.md)
+- [GEMINI.md](./GEMINI.md)
+- [.cursor/rules/project-requirements.mdc](./.cursor/rules/project-requirements.mdc)
+- [.github/copilot-instructions.md](./.github/copilot-instructions.md)
+
 ## Mandatory Database Workflow
 
 All database schema changes must follow the command-driven migration workflow:
