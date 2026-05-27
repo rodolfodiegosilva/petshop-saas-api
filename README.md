@@ -6,7 +6,7 @@ Generic multi-tenant petshop SaaS API built with NestJS, TypeORM and MySQL.
 
 AI agents and automation must read [AGENTS.md](./AGENTS.md) before changing this repository.
 
-Tool-specific instruction files also exist for Claude, Gemini, Cursor, and GitHub Copilot.
+Tool-specific instruction files also exist for Claude, Gemini, Cursor, Codex, Augment, Aider, and GitHub Copilot.
 
 ## Layers
 

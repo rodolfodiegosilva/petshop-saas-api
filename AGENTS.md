@@ -11,9 +11,14 @@ Before changing database structure, modules, entities, repositories, services, o
 These rules are mirrored for other tools in:
 
 - [CLAUDE.md](./CLAUDE.md)
+- [.claude/CLAUDE.md](./.claude/CLAUDE.md)
 - [GEMINI.md](./GEMINI.md)
 - [.cursor/rules/project-requirements.mdc](./.cursor/rules/project-requirements.mdc)
 - [.github/copilot-instructions.md](./.github/copilot-instructions.md)
+- [.augment-guidelines](./.augment-guidelines)
+- [.augment/rules/project-requirements.md](./.augment/rules/project-requirements.md)
+- [.aider.conf.yml](./.aider.conf.yml)
+- [CONVENTIONS.md](./CONVENTIONS.md)
 
 ## Mandatory Database Workflow
 
