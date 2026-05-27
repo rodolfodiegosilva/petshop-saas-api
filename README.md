@@ -2,6 +2,10 @@
 
 Generic multi-tenant petshop SaaS API built with NestJS, TypeORM and MySQL.
 
+## Agent Instructions
+
+AI agents and automation must read [AGENTS.md](./AGENTS.md) before changing this repository.
+
 ## Layers
 
 Every business module follows:
