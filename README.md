@@ -43,6 +43,8 @@ npm run start:production
 
 `synchronize` is always `false`. Use migrations:
 
+Before any database schema change, read [AI_DATABASE_CHANGE_REQUIREMENTS.md](./AI_DATABASE_CHANGE_REQUIREMENTS.md). All schema changes must generate and apply migrations through commands.
+
 ```bash
 npm run db:local:migration:create -- src/database/migrations/ManualChange
 npm run db:local:migration:generate -- src/database/migrations/AddBillingFields
